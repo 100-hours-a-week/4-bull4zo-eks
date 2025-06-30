@@ -17,3 +17,6 @@ spec:
           image: 4moa/moa-be:v2.1.0
           ports:
             - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: backend-secret
