@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1
+metadata:
+  name: redis-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/100-hours-a-week/4-bull4zo-eks.git'
+    targetRevision: main
+    path: redis
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: backend
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
