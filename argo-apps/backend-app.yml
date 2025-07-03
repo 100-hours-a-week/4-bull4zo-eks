@@ -9,9 +9,6 @@ spec:
     repoURL: 'https://github.com/100-hours-a-week/4-bull4zo-eks.git'
     targetRevision: main
     path: backend
-    repoURL: 'https://github.com/100-hours-a-week/4-bull4zo-eks.git'
-    targetRevision: main
-    path: redis
   destination:
     server: https://kubernetes.default.svc 
     namespace: default
