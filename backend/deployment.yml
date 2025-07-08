@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 4moa/moa-be:v8.8.9
+          image: 4moa/moa-be:v3.0.0
           ports:
             - containerPort: 8080
           envFrom:
